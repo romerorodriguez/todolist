@@ -1,0 +1,51 @@
+.container {
+  display: flex; /*declaramos que usaremos flexbox*/
+  height: 100%; /**altura de 100%*/
+  width: 100%; /**anchura de 100%*/
+  background-color: lightgray; /*color de fondo*/ 
+  justify-content: center; /*centramos horizontalmente sobre el eje de x*/
+  align-items: center; /*centramos horizontalmente sobre el eje de y*/
+  overflow-y: auto; /*Barra de desplazamiento vertical*/
+}
+
+.box {
+  background-color: white; /*color de fondo*/
+  width: 400px; /*anchura de 400px*/
+  padding: 20px; /*relleno del borde hacia dentro*/
+  display: flex; /*declaramos que usaremos flexbox*/
+  flex-direction: column; 
+}
+
+.box >h1 {
+  text-align: center; /*alineacion centrada*/
+}
+
+.box >input, .box >select, .box >button{
+  margin-top: 15px; /*margen superior de 15px*/
+  padding: 5px; /*relleno del borde hacia dentro*/
+}
+
+.box > button {
+  cursor: pointer; /*cambiar el color al pasar por encima*/
+  background-color: lightskyblue; /*color de fondo del botón*/
+  border: none;
+  border-radius: 5px;
+}
+
+.tarea{
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  border-bottom: 1px solid lightgray; 
+  transition: .3s;
+}
+
+.tarea:hover {
+  background-color: lightgray;
+}
+
+.busqueda {
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 100%;;
+}
